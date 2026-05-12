@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Art Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #09091b;
+        }
+        .glow-purple {
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            left: -220px;
+            top: -220px;
+            background: radial-gradient(circle, rgba(120, 8, 55, 0.85) 0%, rgba(80, 5, 35, 0.55) 25%, rgba(40, 3, 20, 0.25) 50%, rgba(10, 1, 8, 0.08) 68%, transparent 80%);
+            border-radius: 50%;
+            filter: blur(110px);
+            pointer-events: none;
+        }
+        .glow-dark {
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            right: -380px;
+            bottom: -380px;
+            background: radial-gradient(circle, rgba(120, 8, 55, 0.85) 0%, rgba(80, 5, 35, 0.55) 25%, rgba(40, 3, 20, 0.25) 50%, rgba(10, 1, 8, 0.08) 68%, transparent 80%);
+            border-radius: 50%;
+            filter: blur(110px);
+            pointer-events: none;
+        }
+        .glow-blue {
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(20, 40, 180, 0.5) 0%, rgba(10, 25, 130, 0.25) 35%, rgba(5, 10, 70, 0.1) 60%, transparent 75%);
+            border-radius: 50%;
+            filter: blur(100px);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="h-[100dvh] w-[100dvw] flex flex-col font-sans">
+    <div class="flex-1 bg-[#09091b] bg-gradient-to-br from-[#1a0b2e] via-[#090919] to-[#0d0d2b] p-6 lg:p-8 text-white selection:bg-purple-500/30 flex flex-col overflow-hidden relative">
+        <div class="glow-purple"></div>
+        <div class="glow-dark"></div>
+        <div class="glow-blue"></div>
+        <div class="max-w-5xl mx-auto w-full h-full flex flex-col">
+            <!-- Header -->
+            <div class="flex justify-between items-end mb-6 px-4 flex-shrink-0">
+                <h1 class="text-2xl lg:text-3xl font-medium tracking-tight text-gray-100">
+                    Explore Art Work
+                </h1>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm font-medium pb-1">See All</a>
+            </div>
+
+            <!-- Grid -->
+            <div class="flex-1 grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 min-h-0 pb-4">
+                <!-- Card 1 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i.pinimg.com/236x/bd/0a/92/bd0a922b14b9cce1da868e29a45f8e62.jpg" alt="Monocular" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">Monocular</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">54.8k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://pbs.twimg.com/media/HG6_nz3aEAAPa24.jpg" alt="Horns Mask" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">Horns Mask</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">32.4k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i.pinimg.com/736x/9a/ec/c1/9aecc14e8215fc5d954d4f45512c2c65.jpg" alt="Light Moon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">Light Moon</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">86.6k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i1.sndcdn.com/artworks-fPkpdJYElTK7PgBV-hHJtmQ-t500x500.jpg" alt="Skull Wire" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">Skull Wire</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">78.9k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i.pinimg.com/736x/89/7b/ee/897bee3eb6ef183d968f577d440ff142.jpg" alt="Spiderman" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">Spiderman</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">24.8k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i.pinimg.com/236x/22/2f/1a/222f1aecde4d27072809bad6a9dce6b5.jpg" alt="DeadPool" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">DeadPool</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">59.7k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i.pinimg.com/236x/9d/be/65/9dbe65eca12e0845243e652b32d34e4e.jpg" alt="White Eye" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">White Eye</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">45.7k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="group bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[30px] lg:rounded-[45px] p-3 lg:p-5 flex flex-col items-center transition-all duration-300 hover:bg-white/10 hover:border-white/20 flex-1 min-h-0">
+                    <div class="w-full flex-1 rounded-[20px] lg:rounded-[35px] overflow-hidden mb-3 lg:mb-5 bg-gradient-to-br from-gray-800 to-gray-900 relative min-h-0">
+                        <img src="https://i.pinimg.com/236x/7c/49/08/7c4908147c4c620726852661e3dac49e.jpg" alt="Plastic Spinal" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="w-full flex justify-between items-center px-2 mb-3 lg:mb-6 flex-shrink-0">
+                        <span class="font-medium text-gray-100 tracking-wide text-xs lg:text-sm truncate mr-2">Plastic Spinal</span>
+                        <div class="flex items-center gap-1 group/like cursor-pointer flex-shrink-0">
+                            <span class="text-[9px] lg:text-[11px] text-gray-400 group-hover/like:text-gray-200 transition-colors">98.6k</span>
+                            <svg class="w-3 h-3 lg:w-4 lg:h-4 text-gray-400 group-hover/like:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="w-full py-2 lg:py-3 rounded-full border border-purple-500/40 bg-purple-500/10 text-purple-100 text-xs lg:text-sm font-medium hover:bg-purple-500/20 hover:border-purple-500/60 transition-all flex-shrink-0">Place Bid</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
