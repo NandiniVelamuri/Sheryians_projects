@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScaleX - Insights & Blogs</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: "DM Sans", sans-serif;
+        }
+
+        body {
+            font-family: var(--font-sans);
+        }
+
+        .display {
+            font-family: "Syne", sans-serif !important;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body class="bg-[#090909] font-sans">
+<div class="bg-[#090909] text-white h-screen overflow-hidden flex flex-col">
+    <nav class="flex items-center justify-between px-8 py-5 max-w-6xl mx-auto w-full">
+        <div class="flex items-center gap-3">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5 3L22 8.5L16.5 14H11.5L17 8.5L11.5 3H16.5ZM7.5 21L2 15.5L7.5 10H12.5L7 15.5L12.5 21H7.5Z" fill="white"/>
+            </svg>
+            <span class="text-[1.3rem] font-bold tracking-tight text-white">ScaleX</span>
+        </div>
+
+        <ul class="hidden md:flex items-center gap-10 text-sm font-normal text-neutral-300">
+            <li>
+                <a href="#" class="hover:text-white transition-colors duration-150">Home</a>
+            </li>
+            <li>
+                <a href="#" class="hover:text-white transition-colors duration-150">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="hover:text-white transition-colors duration-150">Blogs</a>
+            </li>
+            <li>
+                <a href="#" class="hover:text-white transition-colors duration-150">Contact Us</a>
+            </li>
+        </ul>
+
+        <button class="bg-white/5 border border-white/10 text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-white/10 transition-colors duration-150 text-white cursor-pointer">Get Started</button>
+    </nav>
+
+    <header class="pt-8 pb-6 text-center px-6">
+        <h1 class="display text-[clamp(4.5rem,11vw,9rem)] font-black leading-none tracking-tighter text-white">
+            Insights &amp; Blogs
+        </h1>
+    </header>
+
+    <div class="flex justify-center gap-3 pb-8 px-6">
+        <button class="px-5 py-2.5 rounded-full text-sm font-medium bg-[#e05a1e] text-white cursor-pointer">All</button>
+        <button class="px-5 py-2.5 rounded-full text-sm font-medium bg-[#1c1c1c] text-neutral-300 hover:bg-[#252525] transition-colors duration-150 cursor-pointer">Tech</button>
+        <button class="px-5 py-2.5 rounded-full text-sm font-medium bg-[#1c1c1c] text-neutral-300 hover:bg-[#252525] transition-colors duration-150 cursor-pointer">SaaS</button>
+        <button class="px-5 py-2.5 rounded-full text-sm font-medium bg-[#1c1c1c] text-neutral-300 hover:bg-[#252525] transition-colors duration-150 cursor-pointer">Marketing</button>
+    </div>
+
+    <main class="px-8 pb-8 max-w-6xl mx-auto w-full flex-grow flex flex-col justify-center min-h-0">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 h-full max-h-[520px] min-h-0 w-full">
+            <article class="card bg-[#141414] rounded-2xl overflow-hidden cursor-pointer hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full min-h-0">
+                <div class="overflow-hidden shrink-0 aspect-[4/3]">
+                    <img
+                        src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017June/12fir22-5_061217111047.jpg"
+                        alt="Martini glass"
+                        class="card-img w-full h-full object-cover transition-transform duration-500"/>
+                </div>
+                <div class="p-6 flex flex-col flex-grow items-start">
+                    <span class="inline-block bg-[#e05a1e]/10 text-[#e05a1e] text-xs font-semibold px-3 py-1.5 rounded-full mb-4">Tech</span>
+                    <h2 class="display text-[1.4rem] font-bold leading-snug text-white line-clamp-2">The Ultimate Guide To SaaS Marketing</h2>
+                    <p class="text-sm text-neutral-500 mt-auto">May 23, 2025</p>
+                </div>
+            </article>
+
+            <article class="card bg-[#141414] rounded-2xl overflow-hidden cursor-pointer hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full min-h-0">
+                <div class="overflow-hidden shrink-0 aspect-[4/3]">
+                    <img
+                        src="https://assets.lummi.ai/assets/QmaLJLztpwec5dhRriuXGij4xsiR4EvtPiLvKMi7b2u7qe?auto=format&w=640"
+                        alt="Chair"
+                        class="card-img w-full h-full object-cover transition-transform duration-500"
+                    />
+                </div>
+                <div class="p-6 flex flex-col flex-grow items-start">
+                    <span class="inline-block bg-[#e05a1e]/10 text-[#e05a1e] text-xs font-semibold px-3 py-1.5 rounded-full mb-4">SaaS</span>
+                    <h2 class="display text-[1.4rem] font-bold leading-snug text-white line-clamp-2">5 Key Trends In SaaS Growth For 2025</h2>
+                    <p class="text-sm text-neutral-500 mt-auto">May 23, 2025</p>
+                </div>
+            </article>
+
+            <article class="card bg-[#141414] rounded-2xl overflow-hidden cursor-pointer hover:scale-[1.02] transition-transform duration-300 flex flex-col h-full min-h-0">
+                <div class="overflow-hidden shrink-0 aspect-[4/3]">
+                    <img
+                        src="https://growlithacademy.com/storage/2026/02/5.png"
+                        alt="Cat"
+                        class="card-img w-full h-full object-cover transition-transform duration-500"/>
+                </div>
+                <div class="p-6 flex flex-col flex-grow items-start">
+                    <span class="inline-block bg-[#e05a1e]/10 text-[#e05a1e] text-xs font-semibold px-3 py-1.5 rounded-full mb-4">Marketing</span>
+                    <h2 class="display text-[1.4rem] font-bold leading-snug text-white line-clamp-2">How Data-Driven Strategies Are Important</h2>
+                    <p class="text-sm text-neutral-500 mt-auto">May 23, 2025</p>
+                </div>
+            </article>
+        </div>
+    </main>
+</div>
+</body>
+</html>
